@@ -39,7 +39,7 @@
 		<crowdar.cucumber.option>src/test/resources/web/features ${cucumber.hooks} ${cucumber.stepsDefinitions} --tags 'not @Ignore' --tags ${cucumber.tags} ${cucumber.report}</crowdar.cucumber.option>
 
 		<!-- client project custom properties -->
-		<web-app.url>http://www.google.com.ar</web-app.url>
+		<web-app.url>https://clockify.me/</web-app.url>
 
 	</properties>
 	<profiles>
@@ -136,7 +136,9 @@
 			<version>1.1.0.10</version>
 		</dependency>
 		<!-- https://mvnrepository.com/artifact/com.github.luben/zstd-jni -->
+
 	</dependencies>
+
 	<build>
 		<filters>
 			<filter>src/main/resources/cucumber.properties</filter>
