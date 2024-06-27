@@ -1,19 +1,15 @@
 package lippia.web.services;
 
-import com.crowdar.core.actions.ActionManager;
 import com.crowdar.core.actions.WebActionManager;
 import lippia.web.constants.LogoutConstants;
 
 
-public class LogoutService extends ActionManager {
+public class LogoutService {
 
     public static void elUsuarioHaceClickEnElIconoDeSuPerfil() {
-        WebActionManager.click(LogoutConstants.ICONO_USUARIO_LOGUEADO);
+        WebActionManager.click(LogoutConstants.LOGGED_USER_ICON);
     }
     public static void elUsuarioHaceClickEnElBotónLogOut() {
-        WebActionManager.click(LogoutConstants.LOG_OUT_BUTTON);
-    }
-    public static void elUsuarioSeEncuentraEnLaPantallaDeLoginLogin_url(String login_url) {
         WebActionManager.click(LogoutConstants.LOG_OUT_BUTTON);
     }
 
