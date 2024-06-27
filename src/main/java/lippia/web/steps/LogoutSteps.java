@@ -23,7 +23,7 @@ public class LogoutSteps extends PageSteps {
     }
 
     @Then("El usuario se encuentra en la pantalla de login (.*)")
-    public void elUsuarioSeEncuentraEnLaPantallaDeLoginLogin_url(String login_url) {
+    public void elUsuarioSeEncuentraEnLaPantallaDeLogin(String login_url) {
             LoginService.navigateTo(login_url);
         }
 }

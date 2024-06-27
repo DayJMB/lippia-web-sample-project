@@ -2,7 +2,7 @@ package lippia.web.constants;
 
 public class LogoutConstants {
 
-        public static final String ICONO_USUARIO_LOGUEADO = "xpath://a[@class='cl-p-0 cl-dropdown-toggle cl-no-arrow cl-d-flex']";
+        public static final String LOGGED_USER_ICON = "xpath://*[@id=\"topbar-menu\"]//app-user-settings[contains(.,'DJ')]";
         public static final String LOG_OUT_BUTTON = "xpath://a[@data-cy='logout']";
 
     }

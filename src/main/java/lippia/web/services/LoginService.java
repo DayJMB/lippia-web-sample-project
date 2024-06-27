@@ -1,14 +1,11 @@
 package lippia.web.services;
-
-import com.crowdar.core.actions.ActionManager;
 import com.crowdar.core.actions.WebActionManager;
 import lippia.web.constants.LoginConstants;
 import org.testng.Assert;
 
 import static org.openqa.selenium.Keys.ENTER;
 
-public class LoginService extends ActionManager {
-
+public class LoginService {
 
     public static void navigateTo(String url) {
         WebActionManager.navigateTo(url);
@@ -30,10 +27,10 @@ public class LoginService extends ActionManager {
         WebActionManager.click(LoginConstants.LOGIN_BUTTON);
     }
     public static void elUsuarioVisualizaEnPantallaEnElCampoPassword(String mensaje) {
-        Assert.assertEquals(WebActionManager.getText(LoginConstants.MENSAJE_PASSWORD), mensaje);
+        Assert.assertEquals(WebActionManager.getText(LoginConstants.MESSAGE_PASSWORD), mensaje);
     }
     public static void elUsuarioVisualizaEnPantallaLaValidación(String mensaje) {
-        Assert.assertEquals(WebActionManager.getText(LoginConstants.MENSAJE_EMAIL), mensaje);
+        Assert.assertEquals(WebActionManager.getText(LoginConstants.MESSAGE_INVALID_EMAIL_PASSWORD), mensaje);
     }
 
     public static void loginExitoso(String email, String password){
